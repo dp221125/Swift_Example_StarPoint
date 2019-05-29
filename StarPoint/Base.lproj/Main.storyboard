@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="RWt-0L-hwM">
+                                <rect key="frame" x="29.5" y="261.5" width="261" height="45"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlankStar" translatesAutoresizingMaskIntoConstraints="NO" id="qtU-Oo-nJs">
+                                        <rect key="frame" x="0.0" y="0.0" width="45.000000000000007" height="45.000000000000007"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qtU-Oo-nJs" secondAttribute="height" multiplier="1:1" id="6ws-9j-aNb"/>
+                                            <constraint firstAttribute="height" constant="45" id="GJw-SW-b3x"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlankStar" translatesAutoresizingMaskIntoConstraints="NO" id="J5h-uO-bSo">
+                                        <rect key="frame" x="54" y="0.0" width="45" height="45.000000000000007"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlankStar" translatesAutoresizingMaskIntoConstraints="NO" id="Rpy-A9-j4Z">
+                                        <rect key="frame" x="108" y="0.0" width="45" height="45.000000000000007"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlankStar" translatesAutoresizingMaskIntoConstraints="NO" id="0I8-Pq-Uyv">
+                                        <rect key="frame" x="162" y="0.0" width="45" height="45.000000000000007"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlankStar" translatesAutoresizingMaskIntoConstraints="NO" id="ZeS-X8-tet">
+                                        <rect key="frame" x="216" y="0.0" width="45" height="45.000000000000007"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-gn-mlg">
+                                <rect key="frame" x="27.5" y="269" width="265" height="31"/>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="starPointChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="UEx-ZT-m05"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A97-oM-6z9">
+                                <rect key="frame" x="139" y="330.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Vb-gn-mlg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8p2-7d-kMg"/>
+                            <constraint firstItem="3Vb-gn-mlg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LkL-zV-fb9"/>
+                            <constraint firstItem="RWt-0L-hwM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5b-Mb-imw"/>
+                            <constraint firstItem="RWt-0L-hwM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SLA-m5-42P"/>
+                            <constraint firstItem="A97-oM-6z9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Skd-2d-Chu"/>
+                            <constraint firstItem="3Vb-gn-mlg" firstAttribute="width" secondItem="RWt-0L-hwM" secondAttribute="width" id="prp-bR-858"/>
+                            <constraint firstItem="A97-oM-6z9" firstAttribute="top" secondItem="RWt-0L-hwM" secondAttribute="bottom" constant="24" id="yFo-Do-rLI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pointLabel" destination="A97-oM-6z9" id="JG3-G4-MOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlankStar" width="24.5" height="24.5"/>
+    </resources>
+</document>
